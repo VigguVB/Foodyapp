@@ -4,6 +4,9 @@
     <link href="Index.css" rel="stylesheet" />
     <title>Foody - Homepage</title>
     <link href="https://i.ibb.co/FY9bjsh/v.jpg" rel="icon" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -33,9 +36,12 @@
                 <span id="logoName">V!</span>
             </div>
             <div id="tagline">
-                <span>Order your favourite food from any restaurants of your choice</span>
+                <marquee>
+                    <span>Order your favourite food from any restaurants of your choice</span>
+
+                </marquee>
             </div>
-            <div class="dropdown">
+            <div class="selectrestaurant">
                 <select class="dropdownCity">
                     <option>--- PLEASE CHOOSE CITY ---</option>
                     <option>DELHI</option>
@@ -154,6 +160,37 @@
             </div>
 
         </div>
+     
+            <div id="myslider" class="carousel slide" data-ride="carousel" style="height: 400px;margin-left: 2%;">
+                <ol class="carousel-indicators">
+                    <li data-target="#myslider" data-slide-to="0" class="active"></li>
+                    <li data-target="#myslider" data-slide-to="1"></li>
+                    <li data-target="#myslider" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" style="height: 400px;">
+                    <div class="item active" >
+                        <img src="https://i.ibb.co/SNYByFk/breakfast-TB3.jpg" alt="a" width="99%" height="390px"/>
+                        <div class="carousel-caption">
+                            <h2>Food</h2>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="https://i.ibb.co/dMgxGvq/ae94296ddb9179cd264ef32dfb79a018.gif" alt="a" width="98%" height="390px"/>
+                    </div>
+                    <div class="item">
+                        <img src="https://i.ibb.co/qWPNxTy/istock-000090550155-small.jpg" alt="a" width="98%" height="390px"/>
+                    </div>
+                </div>
+
+                <a class="left carousel-control" href="#myslider" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                </a>
+                <a class="right carousel-control" href="#myslider" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                </a>
+            </div>
+
+            
 
 
         <footer class="footer">
