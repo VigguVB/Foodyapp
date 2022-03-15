@@ -48,7 +48,8 @@ fetch(url,{method: "GET"})
 .then((data)=>{
     var x = document.getElementById('output');
     let cityname = data.city.name;
-    x.innerText = `Your City is ${cityname}`
-    console.log(cityname)
+    let temperature = `${data.list[0].temp.day} degree`;
+    let output = `Weather of ${cityname} is ${temperature}`
+    x.innerText = output;
 })
 }
