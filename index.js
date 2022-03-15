@@ -29,3 +29,26 @@ const lightMode = () =>{
         tiles[i].style.boxShadow = "2px 5px 12px hsla(0, 0%, 0%, 0.815)"
     }
 }
+
+function getcity(){
+    var x = document.getElementById('output');
+    if(navigator.geolocation){
+       navigator.geolocation.getCurrentPosition(showcity) 
+    }
+    else{
+        x.innerText="Sorry !!! Geo is not supported"
+    }
+}
+function showcity(data){
+let latitude = data.coords.latitude;
+let longitude = data.coords.longitude;
+const url = `https://api.openweathermap.org/data/2.5/forecast/daily?lat=${latitude}&lon=${longitude}&mode=json&units=metric&cnt=1&appid=fbf712a5a83d7305c3cda4ca8fe7ef29`
+fetch(url,{method: "GET"})
+.then((response)=>response.json())
+.then((data)=>{
+    var x = document.getElementById('output');
+    let cityname = data.city.name;
+    x.innerText = `Your City is ${cityname}`
+    console.log(cityname)
+})
+}

@@ -22,6 +22,28 @@ body{
     font-size: 18px;
     color: white;
 }
+.city-btn{
+    width: 200px;
+    position: absolute;
+    margin-left: 17%;
+    margin-top: -3.5%;
+    background-color: white;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: hsl(0, 96%, 39%);
+}
+.check{
+    margin-right: 5%;
+}
+.result{
+    position: absolute;
+    margin-top: -3%;
+    margin-left: 32%;
+    color: white;
+    font-size: 20px;
+    font-family: Hack;
+}
 #modecontainer{
     width: 100px;
     margin-left: 68%;
