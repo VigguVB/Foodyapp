@@ -4,9 +4,10 @@
     <link href="Listing.css" rel="stylesheet" />
     <title>Foody- ListingItem</title>
     <link href="https://i.ibb.co/FY9bjsh/v.jpg" rel="icon" />
+    <script src="./listing.js"></script>
 </head>
 
-<body>
+<body onload="dataload()">
     <div>
         <header>
             <div class="header">
@@ -38,31 +39,31 @@
                 <div class="selectMeal">
                     <form>
                         <div class="container">
-                            <input type="radio" value="All" name="meal" />
+                            <input onclick="filterall(0)" type="radio" value="All" name="meal" />
                             <label for="All">All</label>
                         </div>
-                        <div class="container">
-                            <input type="radio" value="Breakfast" name="meal" />
+                        <div  class="container">
+                            <input onclick="filterall(1)" type="radio" value="Breakfast" name="meal" />
                             <label for="Breakfast">Breakfast</label>
                         </div>
                         <div class="container">
-                            <input type="radio" value="North Indian Meal" name="meal" />
+                            <input onclick="filterall(2)" type="radio" value="North Indian Meal" name="meal" />
                             <label for="North Indian Meal">North Indian Meal</label>
                         </div>
                         <div class="container">
-                            <input type="radio" value="Biriyani Zone" name="meal" />
+                            <input onclick="filterall(3)" type="radio" value="Biriyani Zone" name="meal" />
                             <label for="Biriyani Zone">Biriyani Zone</label>
                         </div>
                         <div class="container">
-                            <input type="radio" value="Chinese Foods" name="meal" />
+                            <input onclick="filterall(4)" type="radio" value="Chinese Foods" name="meal" />
                             <label for="Chinese Foods">Chinese Foods</label>
                         </div>
                         <div class="container">
-                            <input type="radio" value="South Indian Meal" name="meal" />
+                            <input onclick="filterall(5)"  type="radio" value="South Indian Meal" name="meal" />
                             <label for="South Indian Meal">South Indian Meal</label>
                         </div>
                         <div class="container">
-                            <input type="radio" value="Grills & Tandoori" name="meal" />
+                            <input onclick="filterall(6)"  type="radio" value="Grills & Tandoori" name="meal" />
                             <label for="Grills & Tandoori">Grills & Tandoori</label>
                         </div>
                     </form>
@@ -99,9 +100,9 @@
 
             </div>
             <div class="listDiv">
-                <div>
+                <div class="itemsmeals">
                     <a href="./Northmeal.html">
-                        <div class="itemContainer">
+                        <div  id="res1" class="itemContainer">
                             <div class="component1">
                                 <img src="https://i.ibb.co/tHnXZ8C/7bees.jpg" />
                             </div>
@@ -124,7 +125,7 @@
 
                     <div>
                         <a href="HyderabadibiriyaniDisplay.html">
-                            <div class="itemContainer">
+                            <div id="res2" class="itemContainer">
                                 <div class="component1">
                                     <img src="https://i.ibb.co/CPkkpvd/biriyanihotel.jpg" />
                                 </div>
@@ -147,7 +148,7 @@
                     </div>
                     <div>
                         <a href="Snacksdisplay.html">
-                            <div class="itemContainer">
+                            <div id="res3" class="itemContainer">
                                 <div class="component1">
                                     <img src="https://i.ibb.co/0rQWSPF/hotel.jpg" />
                                 </div>
@@ -170,11 +171,11 @@
                     </div>
                     <div>
                         <a href="./SouthmealDisplay.html">
-                            <div class="itemContainer">
+                            <div id="res4" class="itemContainer">
                                 <div class="component1">
                                     <img src="https://i.ibb.co/ydKks2S/greenhotel.jpg" />
                                 </div>
-                                <div class="component2">
+                                <div  class="component2">
                                     <h2 class="heading">Hotel TajMahal</h2>
                                     <p class="description">Andheri, Mumbai</p>
                                     <p class="description">Royal Atmosphere</p>
@@ -193,7 +194,7 @@
                     </div>
                     <div>
                         <a href="./AlfahamDisplay.html">
-                        <div class="itemContainer">
+                        <div id="res5" class="itemContainer">
                             <div class="component1">
                                 <img src="https://i.ibb.co/HPxtdC3/grillrestro.jpg" />
                             </div>

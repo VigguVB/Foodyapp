@@ -10,6 +10,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="./index.js"></script>
+    <script>
+        window.onload=getCity()
+    </script>
 </head>
 
 <body>
@@ -52,21 +55,13 @@
                 </marquee>
             </div>
             <div class="selectrestaurant">
-                <select class="dropdownCity">
+                <select onchange="getRest()" id="city" class="dropdownCity">
                     <option>--- PLEASE CHOOSE CITY ---</option>
-                    <option>DELHI</option>
-                    <option>MUMBAI</option>
-                    <option>BANGALORE</option>
+                    
                 </select>
-                <select class="dropdownRestaurant">
+                <select id="restaurant" class="dropdownRestaurant">
                     <option>--- PLEASE CHOOSE RESTAURANT ---</option>
-                    <option>7 DAYS RESTAURANT</option>
-                    <option>DOLPHIN</option>
-                    <option>HOTEL TAJMAHAL</option>
-                    <option>HYDERABADI'S</option>
-                    <option>KYANI & CO</option>
-                    <option>OLIVE BEACH</option>
-                    <option>GRILL ZONE CAFE</option>
+                    
                 </select>
             </div>
         </div>
